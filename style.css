@@ -33,3 +33,14 @@ button:hover {
     object-fit: cover;
     border-radius: 10px;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:20px;
+}
+
+nav button {
+    margin-left: 10px;
+
+}
