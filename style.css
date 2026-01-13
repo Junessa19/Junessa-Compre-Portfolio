@@ -94,19 +94,24 @@ nav button:hover {
 
 
 .about-box {
-    background: rgba(240, 146, 146, 0.9);
+     background: linear-gradient(135deg, #ffb3b3, #ff8b8b); 
     border: 2px solid #333;
     border-radius: 15px;
     padding: 25px;
     max-width: 900px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.about-box h2 {
-    font-size: 48px; 
-    font-weight: 700;
+#About h2 {
+    font-size: 80px;            
+    font-weight: 900;             
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #333;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* subtle shadow */
+    background: linear-gradient(90deg, #312022, #362f24); /* gradient color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about {
@@ -114,6 +119,12 @@ nav button:hover {
     gap: 20px;
     align-items: center;
 }
+
+.about-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
 
 .about img {
     width: 150px;
@@ -125,6 +136,9 @@ nav button:hover {
 .about p {
     text-align: justify;
     line-height: 1.6;
+     font-size: 18px;
+    font-weight: 500;
+    color: #222;
 }
 
 .contact {
@@ -143,31 +157,29 @@ nav button:hover {
     text-decoration: underline;
 }
 
-.projects-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
-    background: rgba(245, 153, 153, 0.95);
-    border-radius: 15px;
-    border: 2px solid #333;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
+#Projects h2 {
+    font-size: 60px;       
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
 }
 
 .project-box {
-    background: rgb(255, 179, 179);
-    border: 2px solid #333;
-    border-radius: 10px;
-    padding: 15px;
-    width: 350px;
+     background: linear-gradient(135deg, #ffb3b3, #ff8b8b); 
+    border-radius: 15px;
+    padding: 25px;
+    width: 380px;  
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-box h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+     font-size: 28px;       
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .project-box a {
@@ -178,10 +190,13 @@ nav button:hover {
     color: white;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .project-box a:hover {
-    background: #555;
+   background: #555;
+    transform: scale(1.05);
 }
 
 .project-container {
@@ -189,6 +204,14 @@ nav button:hover {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
+}
+
+.project-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    margin: 5px 0;
+    line-height: 1.5;
 }
 
 .education-box {
@@ -205,4 +228,43 @@ nav button:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+#Education h2 {
+    font-size: 60px;       
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+}
+
+.education-box {
+    background: linear-gradient(135deg, #ffb3b3, #ff8b8b);
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;  
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.education-box h3 {
+    font-size: 28px;       
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.education-box p {
+    font-size: 18px;       
+    font-weight: 500;
+    color: #222;
+    margin: 5px 0;
+    line-height: 1.5;
 }
