@@ -1,21 +1,11 @@
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: pink;
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    color: #333;
-}
-
-h2 {
-    color: #555;
 }
 
 nav {
@@ -29,8 +19,8 @@ nav {
 }
 
 nav button {
-    padding: 10px 15px;
     margin-left: 10px;
+    padding: 10px 15px;
     background-color: #333;
     color: white;
     border: none;
@@ -42,11 +32,26 @@ nav button:hover {
     background-color: #555;
 }
 
-
-section {
-    margin-top: 60px;
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    color: #333;
+}
 
 .about-box {
     background-color: #fff;
@@ -54,10 +59,8 @@ section {
     border-radius: 15px;
     padding: 25px;
     max-width: 900px;
-    margin: auto;
     box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
-
 
 .about {
     display: flex;
@@ -68,15 +71,14 @@ section {
 .about img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .about p {
     text-align: justify;
     line-height: 1.6;
 }
-
 
 .contact {
     margin-top: 20px;
@@ -86,21 +88,19 @@ section {
 
 .contact a {
     color: #333;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .contact a:hover {
     text-decoration: underline;
 }
 
-
 .project-box {
     background-color: #fff;
     border: 2px solid #333;
     padding: 20px;
     border-radius: 10px;
-    max-width: 400px;
 }
 
 .project-box a {
@@ -115,4 +115,13 @@ section {
 
 .project-box a:hover {
     background-color: #555;
+}
+
+.education-box {
+    background: white;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
 }
