@@ -153,6 +153,13 @@ nav button:hover {
     background-color: #555;
 }
 
+.project-container {
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;             
+    justify-content: center;
+}
+
 .education-box {
      background: rgba(255, 255, 255, 0.9);
     border: 2px solid #333;
@@ -160,4 +167,11 @@ nav button:hover {
     padding: 20px;
     width: 250px;
     text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
