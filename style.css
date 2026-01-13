@@ -1,43 +1,75 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
     color: #333;
-
 }
 
 h2 {
     color: #555;
 }
 
-button{
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: pink;
     padding: 10px;
+    z-index: 1000;
+}
+
+nav button {
+    padding: 10px 15px;
+    margin-left: 10px;
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
+nav button:hover {
     background-color: #555;
-
 }
 
 
-.about img{
+section {
+    margin-top: 60px;
+}
+
+
+.about-box {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+
+.about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.about{
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 .about p {
@@ -45,25 +77,42 @@ button:hover {
     line-height: 1.6;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom:20px;
+
+.contact {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
 }
 
-nav button {
-    margin-left: 10px;
-
+.contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.project {
-    border: 2px solid #333;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+.project-box {
     background-color: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.project-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .project-box a:hover {
     background-color: #555;
-}   
+}
