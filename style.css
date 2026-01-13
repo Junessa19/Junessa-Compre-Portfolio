@@ -55,3 +55,15 @@ nav button {
     margin-left: 10px;
 
 }
+
+.project {
+    border: 2px solid #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.project-box a:hover {
+    background-color: #555;
+}
